@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0B0F17" />
+  <meta name="color-scheme" content="dark" />
+
+  <title>Ricky Studio Barber — Clean Cuts, Confidence & Energy</title>
+  <meta name="description" content="Ricky Studio Barber — premium men’s haircuts, fades and beard grooming. By appointment only. Book on WhatsApp." />
+
+  <!-- Favicon / PWA -->
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./assets/logo.svg" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+
+  <!-- Open Graph (Facebook / WhatsApp Preview) -->
+  <meta property="og:title" content="Ricky Studio Barber" />
+  <meta property="og:description" content="Clean cuts. Real connections. Book on WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/og.jpg" />
+  <meta property="og:locale" content="en_GB" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Structured Data (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Ricky Studio Barber",
+    "image": ["./assets/og.jpg"],
+    "description": "Premium men’s haircuts, fades and beard grooming. By appointment only.",
+    "telephone": "",
+    "priceRange": "££",
+    "url": "",
+    "sameAs": [
+      "https://instagram.com/rickybarbers"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "",
+      "addressRegion": "",
+      "postalCode": "",
+      "addressCountry": "JE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "19:00" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Ricky Studio Barber">
+        <img src="./assets/logo.svg" alt="Ricky Studio" class="brand__logo" />
+        <span class="brand__text">
+          <strong>Ricky Studio</strong>
+          <span>Barber</span>
+        </span>
+      </a>
+
+      <nav class="menu" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="https://instagram.com/rickybarbers" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn--primary" id="bookTop" href="#contact">Book now</a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile" id="mobileMenu" hidden>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--primary" href="#contact">Book on WhatsApp</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill">By appointment only • Premium men’s grooming</p>
+          <h1>Clean cuts.<br/>Confidence.<br/><span class="accent">Energy.</span></h1>
+          <p class="sub">
+            Ricky Studio is more than a haircut — it’s about how you feel when you leave.
+            Sharp fades, clean lineups, and real attention to detail.
+          </p>
+
+          <div class="cta">
+            <a class="btn btn--primary" id="bookHero" href="#contact">Book on WhatsApp</a>
+            <a class="btn btn--ghost" href="#services">See services</a>
+          </div>
+
+          <div class="trust">
+            <div class="trust__item">
+              <strong>3+</strong><span>Years experience</span>
+            </div>
+            <div class="trust__item">
+              <strong>100%</strong><span>Recommended (reviews)</span>
+            </div>
+            <div class="trust__item">
+              <strong>Pro</strong><span>Tools & finishing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="card card--media">
+            <img src="./assets/hero.jpg" alt="Ricky Studio Barber" loading="eager" />
+            <div class="card__overlay">
+              <div>
+                <strong>Ricky Studio</strong>
+                <span>Barber • Appointments</span>
+              </div>
+              <span class="badge">Available today</span>
+            </div>
+          </div>
+          <div class="mini">
+            <div class="mini__card">
+              <strong>Fades</strong><span>Skin • Taper • Burst</span>
+            </div>
+            <div class="mini__card">
+              <strong>Beard</strong><span>Shape • Trim • Line</span>
+            </div>
+            <div class="mini__card">
+              <strong>Finish</strong><span>Detailing & styling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Services</h2>
+          <p>Simple menu — you can adjust prices anytime.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Haircut</h3>
+            <p>Clean cut tailored to your style + finishing.</p>
+            <div class="price">
+              <span class="tag">From</span>
+              <strong>£25</strong>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Skin Fade</h3>
+            <p>Sharp fade, smooth blend, crisp lineup.</p>
+            <div class="price">
+              <span class="tag">From</span>
+              <strong>£30</strong>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Haircut + Beard</h3>
+            <p>Full refresh: cut + beard shape & line.</p>
+            <div class="price">
+              <span class="tag">From</span>
+              <strong>£40</strong>
+            </div>
+          </article>
+        </div>
+
+        <div class="infoBar">
+          <div>
+            <strong>Appointments only</strong>
+            <span>Message to book and confirm time.</span>
+          </div>
+          <a class="btn btn--primary" href="#contact">Book now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--soft" id="about">
+      <div class="container about">
+        <div class="about__text">
+          <h2>About Ricky</h2>
+          <p>
+            What started as a skill became a passion — not just for clean cuts,
+            but for building real connections. The mission goes beyond a haircut:
+            every client leaves feeling renewed, heard, and confident.
+          </p>
+          <ul class="ticks">
+            <li>Detail-focused finishing & clean lineups</li>
+            <li>Professional tools + hygienic setup</li>
+            <li>Friendly atmosphere, no rush</li>
+          </ul>
+
+          <div class="cta">
+            <a class="btn btn--primary" href="#contact">Book on WhatsApp</a>
+            <a class="btn btn--ghost" href="https://instagram.com/rickybarbers" target="_blank" rel="noopener">See work on Instagram</a>
+          </div>
+        </div>
+
+        <div class="about__media">
+          <div class="card card--split">
+            <img src="./assets/ricky-1.jpg" alt="Ricky portrait" loading="lazy" />
+          </div>
+          <div class="card card--split">
+            <img src="./assets/ricky-2.jpg" alt="Ricky with barber tools" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <h2>Gallery</h2>
+          <p>Add 6–12 photos of cuts (best: bright, close-up, clean background).</p>
+        </div>
+
+        <div class="gallery">
+          <div class="ph">Add photo</div>
+          <div class="ph">Add photo</div>
+          <div class="ph">Add photo</div>
+          <div class="ph">Add photo</div>
+          <div class="ph">Add photo</div>
+          <div class="ph">Add photo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section section--soft" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <h2>Reviews</h2>
+          <p>Short, real comments work best. Replace with Ricky’s reviews.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card quote">
+            <p>“Best fade I’ve had — super clean and professional.”</p>
+            <span>— Client</span>
+          </article>
+          <article class="card quote">
+            <p>“Great vibe, takes time with the details. Highly recommend.”</p>
+            <span>— Client</span>
+          </article>
+          <article class="card quote">
+            <p>“Beard line-up is always perfect. I won’t go anywhere else.”</p>
+            <span>— Client</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div class="contact__card">
+          <h2>Book an appointment</h2>
+          <p>Fastest way: WhatsApp message. You’ll get a quick reply with availability.</p>
+
+          <div class="contact__actions">
+            <!-- ✅ EDITA ESTE LINK: mete o número do Ricky com código do país (ex: +44...) -->
+            <a class="btn btn--primary" id="waBtn" href="https://wa.me/447000000000?text=Hi%20Ricky%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20What%20times%20do%20you%20have%20available%3F" target="_blank" rel="noopener">
+              WhatsApp booking
+            </a>
+
+            <a class="btn btn--ghost" href="mailto:booking@rickystudio.com?subject=Booking%20Request&body=Hi%20Ricky%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%0A%0APreferred%20date%2Ftime%3A%0AService%3A%0AName%3A%0APhone%3A">
+              Email booking
+            </a>
+          </div>
+
+          <div class="details">
+            <div><strong>Instagram</strong><span>@rickybarbers</span></div>
+            <div><strong>Type</strong><span>Men’s Hairdresser / Barber</span></div>
+            <div><strong>Availability</strong><span>By appointment only</span></div>
+          </div>
+
+          <div class="note">
+            Tip: add your address + Google Maps link here when ready.
+          </div>
+        </div>
+
+        <aside class="contact__side">
+          <div class="card card--side">
+            <h3>What to send on WhatsApp</h3>
+            <ol>
+              <li>Service (Haircut / Fade / Haircut+Beard)</li>
+              <li>Preferred day & time</li>
+              <li>Any reference photo (optional)</li>
+            </ol>
+          </div>
+
+          <div class="card card--side">
+            <h3>Social proof</h3>
+            <p>Post 2–3 cuts per week + 1 client testimonial. Consistency wins.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <img src="./assets/logo.svg" alt="Ricky Studio" class="footer__logo" />
+          <div>
+            <strong>Ricky Studio</strong>
+            <span>Barber • Appointments</span>
+          </div>
+        </div>
+
+        <div class="footer__right">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Book</a>
+          <a href="https://instagram.com/rickybarbers" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <span>© <span id="year"></span> Ricky Studio Barber. All rights reserved.</span>
+        <span class="made">Demo by AP Digital Solutions</span>
+      </div>
+    </footer>
+
+    <button class="fab" id="fab" aria-label="Book on WhatsApp">
+      WhatsApp
+    </button>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
