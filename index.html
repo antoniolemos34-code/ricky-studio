@@ -7,6 +7,7 @@
   <title>Ricky Studio Barber</title>
   <meta name="description" content="Ricky Studio Barber — By appointment only. Book via WhatsApp, Instagram or Facebook." />
 
+  <!-- Social preview -->
   <meta property="og:title" content="Ricky Studio Barber" />
   <meta property="og:description" content="By appointment only. Book via WhatsApp, Instagram or Facebook." />
   <meta property="og:image" content="./hero.jpg" />
@@ -25,7 +26,6 @@
 </head>
 
 <body>
-  <!-- TOP BAR -->
   <header class="topbar">
     <div class="wrap topbar-inner">
       <a class="brand" href="#top" aria-label="Ricky Studio Barber">
@@ -36,36 +36,32 @@
         </div>
       </a>
 
-      <div class="actions">
-        <!-- ✅ Troca para o WhatsApp do Ricky -->
+      <nav class="actions" aria-label="Quick links">
+        <!-- TROCA O NUMERO AQUI -->
         <a class="btn gold" href="https://wa.me/44XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
-
-        <!-- ✅ Instagram já está correto -->
         <a class="btn" href="https://www.instagram.com/rickybarbers" target="_blank" rel="noopener">Instagram</a>
-
-        <!-- ✅ Troca para o Facebook correto (página) -->
+        <!-- TROCA O FACEBOOK AQUI -->
         <a class="btn" href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
-      </div>
+      </nav>
     </div>
   </header>
 
-  <!-- HERO -->
   <main id="top">
-    <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <!-- imagem real (para garantir que carrega no Pages) -->
+      <img class="hero-img" src="./hero.jpg" alt="" loading="eager" fetchpriority="high" />
+
       <div class="hero-overlay" aria-hidden="true"></div>
 
       <div class="wrap hero-inner">
         <div class="badge">By appointment only</div>
 
-        <h1>Premium cuts.<br><span class="goldtext">Clean fades. Sharp finish.</span></h1>
-
-        <p>
-          Book fast via WhatsApp, Instagram or Facebook. Simple, professional, and client-focused.
-        </p>
+        <h1>Ricky Studio Barber</h1>
+        <p>Simple. Premium. Professional. Book fast via WhatsApp, Instagram or Facebook.</p>
 
         <div class="cta-row">
-          <!-- ✅ Troca para o WhatsApp do Ricky -->
+          <!-- TROCA O NUMERO AQUI -->
           <a class="cta gold" href="https://wa.me/44XXXXXXXXXX" target="_blank" rel="noopener">Book on WhatsApp</a>
           <a class="cta ghost" href="https://www.instagram.com/rickybarbers" target="_blank" rel="noopener">Message on Instagram</a>
         </div>
@@ -73,21 +69,20 @@
     </section>
 
     <!-- PHOTO BELOW HERO -->
-    <section class="wrap photo-section">
-      <div class="photo-card">
+    <section class="wrap below">
+      <div class="card photo">
         <img src="./ricky-2.jpg" alt="Ricky Studio Barber" loading="lazy">
       </div>
 
-      <div class="mini">
-        <h2>Ricky Studio Barber</h2>
-        <p>
-          “This isn’t just about a fade or a line-up — it’s about energy.”
-        </p>
+      <div class="card info">
+        <h2>Appointments</h2>
+        <p>Send a message and book your slot. Fast replies, clean cuts, sharp finish.</p>
 
         <div class="mini-actions">
-          <!-- ✅ Troca para o WhatsApp do Ricky -->
+          <!-- TROCA O NUMERO AQUI -->
           <a class="btn gold" href="https://wa.me/44XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
           <a class="btn" href="https://www.instagram.com/rickybarbers" target="_blank" rel="noopener">Instagram</a>
+          <!-- TROCA O FACEBOOK AQUI -->
           <a class="btn" href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
         </div>
       </div>
@@ -96,7 +91,6 @@
     <footer class="wrap footer">
       <div>© <span id="year"></span> Ricky Studio Barber</div>
       <div class="footlinks">
-        <a href="https://www.instagram.com/rickybarbers" target="_blank" rel="noopener">Instagram</a>
         <a href="#top">Back to top</a>
       </div>
     </footer>
