@@ -1,103 +1,80 @@
-<!doctype html>
-<html lang="en-GB">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#0b0b0c" />
-  <title>Ricky Studio Barber — Book by WhatsApp</title>
-
-  <meta name="description" content="Ricky Studio Barber — by appointment only. Book fast via WhatsApp. Premium cuts, clean finish." />
-
-  <!-- Social preview (optional) -->
-  <meta property="og:title" content="Ricky Studio Barber" />
-  <meta property="og:description" content="By appointment only. Book fast via WhatsApp." />
-  <meta property="og:image" content="./hero.jpg" />
-  <meta property="og:type" content="website" />
-
-  <link rel="icon" href="./logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ricky Studio Barber</title>
 
   <link rel="stylesheet" href="./styles.css" />
-</head>
+  <link rel="icon" href="./logo.png" />
 
+  <meta name="description" content="Ricky Studio Barber — Book fast via WhatsApp, Instagram or Facebook. By appointment only." />
+</head>
 <body>
-  <header class="topbar">
+
+  <!-- HEADER -->
+  <header class="top">
     <div class="brand">
-      <img class="brand__logo" src="./logo.png" alt="Ricky Studio Barber logo" />
-      <div class="brand__text">
-        <div class="brand__name">Ricky Studio</div>
-        <div class="brand__sub">BARBER</div>
+      <img src="./logo.png" alt="Ricky Studio Barber logo">
+      <div>
+        <strong>Ricky Studio</strong>
+        <span>BARBER</span>
       </div>
     </div>
 
-    <nav class="topbar__actions">
-      <!-- Troca o número no WhatsApp abaixo -->
-      <a class="chip chip--gold" href="https://wa.me/447000000000?text=Hi%20Ricky%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">WhatsApp</a>
-      <a class="chip" href="https://www.instagram.com/rickybarbers/" target="_blank" rel="noopener">Instagram</a>
-      <!-- Troca pelo link certo do Facebook -->
-      <a class="chip" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
-    </nav>
+    <div class="links">
+      <a class="btn gold" href="https://wa.me/" target="_blank">WhatsApp</a>
+      <a class="btn" href="https://www.instagram.com/rickybarbers/" target="_blank">Instagram</a>
+      <a class="btn" href="https://www.facebook.com/" target="_blank">Facebook</a>
+    </div>
   </header>
 
-  <main class="container">
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('./hero.jpg')">
+    <div class="overlay">
+      <span class="badge">BY APPOINTMENT ONLY</span>
+      <h1>Ricky Studio Barber</h1>
+      <p>Simple. Premium. Professional.<br>Book fast via WhatsApp, Instagram or Facebook.</p>
 
-    <!-- HERO -->
-    <section class="hero" aria-label="Ricky Studio Barber hero">
-      <div class="hero__overlay"></div>
-
-      <div class="hero__content">
-        <div class="pill">BY APPOINTMENT ONLY</div>
-
-        <h1>Ricky Studio Barber</h1>
-        <p class="lead">Simple. Premium. Professional. Book fast via WhatsApp, Instagram or Facebook.</p>
-
-        <div class="cta">
-          <a class="btn btn--gold" href="https://wa.me/447000000000?text=Hi%20Ricky%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
-            Book on WhatsApp
-          </a>
-          <a class="btn" href="https://www.instagram.com/rickybarbers/" target="_blank" rel="noopener">
-            Message on Instagram
-          </a>
-        </div>
-
-        <div class="hero__note">Fast replies • Clean cuts • Sharp finish</div>
+      <div class="cta">
+        <a class="btn gold big" href="https://wa.me/" target="_blank">Book on WhatsApp</a>
+        <a class="btn big" href="https://www.instagram.com/rickybarbers/" target="_blank">Message on Instagram</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PHOTO (ricky-2) -->
-    <section class="section">
-      <div class="card">
-        <h2>About</h2>
-        <p class="muted">
-          What started as a skill became a passion — clean cuts, real connections, and confidence.
-          If you want a fresh look, book your slot and I’ll take care of the rest.
-        </p>
+  <!-- ABOUT -->
+  <section class="about">
+    <p>
+      My mission goes beyond giving haircuts. I want every person who walks in
+      to leave feeling renewed, heard, and confident.
+      <br><br>
+      This isn’t just about a fade or a lineup — it’s about energy.
+      <br><br>
+      Thank you to all my clients for always trusting me with your look.
+    </p>
+  </section>
 
-        <div class="photo-wrap">
-          <img class="photo" src="./ricky-2.jpg" alt="Ricky Studio Barber" loading="lazy">
-        </div>
+  <!-- IMAGE -->
+  <section class="photo">
+    <img src="./ricky-2.jpg" alt="Ricky Studio Barber portrait">
+  </section>
 
-        <div class="btnRow">
-          <a class="btn btn--gold" href="https://wa.me/447000000000?text=Hi%20Ricky%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">WhatsApp</a>
-          <a class="btn" href="https://www.instagram.com/rickybarbers/" target="_blank" rel="noopener">Instagram</a>
-          <a class="btn" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
-        </div>
-      </div>
-    </section>
+  <!-- APPOINTMENTS -->
+  <section class="appointments">
+    <h2>Appointments</h2>
+    <p>Send a message and book your slot.</p>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer__inner">
-        <span>© <span id="year"></span> Ricky Studio Barber</span>
-        <span class="dot">•</span>
-        <span>Appointments only</span>
-      </div>
-    </footer>
+    <div class="cta">
+      <a class="btn gold big" href="https://wa.me/" target="_blank">WhatsApp</a>
+      <a class="btn big" href="https://www.instagram.com/rickybarbers/" target="_blank">Instagram</a>
+      <a class="btn big" href="https://www.facebook.com/" target="_blank">Facebook</a>
+    </div>
+  </section>
 
-  </main>
+  <footer>
+    © Ricky Studio Barber
+  </footer>
 
-  <script src="./script.js"></script>
 </body>
 </html>
