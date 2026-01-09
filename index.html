@@ -3,112 +3,157 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <title>Ricky Studio Barber — Appointments Only</title>
-  <meta name="description" content="Ricky Studio Barber. By appointment only. Book fast via WhatsApp, Instagram or Facebook." />
-  <meta name="theme-color" content="#0b0b0c" />
+  <meta name="theme-color" content="#0b0b0e" />
+  <meta name="color-scheme" content="dark" />
+
+  <title>Ricky Studio Barber — By Appointment Only</title>
+  <meta name="description" content="Ricky Studio Barber — premium men’s hairdresser. Book fast via WhatsApp, Instagram or Facebook. By appointment only." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ricky Studio Barber" />
+  <meta property="og:description" content="Simple. Premium. Professional. Book fast via WhatsApp, Instagram or Facebook." />
+  <meta property="og:image" content="./hero.jpg" />
+  <meta property="og:type" content="website" />
+
   <link rel="icon" href="./logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
   <header class="topbar">
-    <div class="brand">
-      <img class="brand__logo" src="./logo.png" alt="Ricky Studio Barber logo" />
-      <div class="brand__text">
-        <div class="brand__name">Ricky Studio</div>
-        <div class="brand__sub">BARBER</div>
-      </div>
-    </div>
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Ricky Studio Barber">
+        <img class="brand__logo" src="./logo.png" alt="Ricky Studio Barber logo">
+        <div class="brand__text">
+          <div class="brand__name">Ricky Studio</div>
+          <div class="brand__tag">BARBER</div>
+        </div>
+      </a>
 
-    <nav class="topnav">
-      <a class="chip chip--gold" href="#book">WhatsApp</a>
-      <a class="chip" href="https://www.instagram.com/rickybarbers" target="_blank" rel="noopener">Instagram</a>
-      <a class="chip" href="#social">Facebook</a>
-    </nav>
+      <nav class="nav">
+        <a class="chip" href="#book">Book</a>
+        <a class="chip" href="#about">About</a>
+        <a class="chip" href="#gallery">Photos</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main id="top">
     <!-- HERO -->
-    <section class="hero" aria-label="Ricky Studio Barber">
-      <div class="hero__bg" role="img" aria-label="Barber tools background"></div>
+    <section class="hero">
+      <img class="hero__bg" src="./hero.jpg" alt="Ricky Studio Barber hero background" loading="eager">
       <div class="hero__overlay"></div>
 
-      <div class="hero__content">
-        <div class="pill">BY APPOINTMENT ONLY</div>
-
+      <div class="container hero__content">
+        <div class="badge">BY APPOINTMENT ONLY</div>
         <h1>Ricky Studio Barber</h1>
-        <p class="lead">
-          Simple. Premium. Professional. Book fast via WhatsApp, Instagram or Facebook.
+        <p class="sub">
+          Simple. Premium. Professional.<br>
+          Book fast via WhatsApp, Instagram or Facebook.
         </p>
 
         <div class="cta">
-          <a class="btn btn--gold" id="waLink" href="#" target="_blank" rel="noopener">
+          <!-- IMPORTANT: replace the WhatsApp number below -->
+          <a class="btn btn--primary" target="_blank" rel="noopener"
+             href="https://wa.me/REPLACE_WITH_NUMBER?text=Hi%20Ricky%2C%20I%27d%20like%20to%20book%20an%20appointment.">
             Book on WhatsApp
           </a>
-          <a class="btn" href="https://www.instagram.com/rickybarbers" target="_blank" rel="noopener">
+
+          <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/rickybarbers/">
             Message on Instagram
           </a>
-          <a class="btn" id="fbLink" href="#" target="_blank" rel="noopener">
-            Open Facebook
+
+          <!-- IMPORTANT: replace the Facebook link below (page URL) -->
+          <a class="btn" target="_blank" rel="noopener" href="https://facebook.com/REPLACE_FACEBOOK_PAGE">
+            Facebook Page
           </a>
         </div>
-
-        <div class="meta">
-          Fast replies • Clean cuts • Sharp finish
-        </div>
-      </div>
-    </section>
-
-    <!-- PHOTO (below hero) -->
-    <section class="photo">
-      <div class="wrap">
-        <img class="photo__img" src="./ricky-2.jpg" alt="Ricky Studio Barber photo" loading="lazy" />
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="section">
-      <div class="wrap card">
-        <h2>About</h2>
-        <p>
-          What started as a skill quickly became a passion — not just for creating clean cuts, but for building real connections.
-          My mission goes beyond giving haircuts. I want every person who walks in to leave feeling renewed, heard, and confident.
-          This isn’t just about a fade or a lineup — it’s about energy.
-        </p>
-        <p class="muted">
-          Thank you to all my clients for always trusting me with your look. Your support means everything. 🙏
-        </p>
-      </div>
-    </section>
+    <section id="about" class="section">
+      <div class="container grid">
+        <div class="card card--soft">
+          <h2>About Ricky</h2>
+          <p class="muted">
+            What started as a skill quickly became a passion — not just for creating clean cuts,
+            but for building real connections.
+          </p>
+          <p class="muted">
+            My mission goes beyond giving haircuts. I want every person who walks in to leave feeling
+            renewed, heard, and confident. This isn’t just about a fade or a lineup — it’s about energy.
+          </p>
+          <p class="muted">
+            Thank you to all my clients for always trusting me with your look. Your support means everything. 🙏
+          </p>
+        </div>
 
-    <!-- BOOKINGS -->
-    <section class="section" id="book">
-      <div class="wrap card">
-        <h2>Appointments</h2>
-        <p class="muted">Send a message and book your slot. Quick replies. Professional service.</p>
+        <div class="card card--glow" id="book">
+          <h2>Appointments</h2>
+          <p class="muted">Send a message and book your slot. Fast replies, clean cuts, sharp finish.</p>
 
-        <div class="cta cta--small" id="social">
-          <a class="btn btn--gold" id="waLink2" href="#" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="btn" href="https://www.instagram.com/rickybarbers" target="_blank" rel="noopener">Instagram</a>
-          <a class="btn" id="fbLink2" href="#" target="_blank" rel="noopener">Facebook</a>
+          <div class="cta cta--stack">
+            <a class="btn btn--primary" target="_blank" rel="noopener"
+               href="https://wa.me/REPLACE_WITH_NUMBER?text=Hi%20Ricky%2C%20I%27d%20like%20to%20book%20an%20appointment.">
+              WhatsApp
+            </a>
+            <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/rickybarbers/">Instagram</a>
+            <a class="btn" target="_blank" rel="noopener" href="https://facebook.com/REPLACE_FACEBOOK_PAGE">Facebook</a>
+          </div>
+
+          <div class="smallnote">
+            Tip: add your WhatsApp number in the link (see comment in the code).
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- GALLERY (ricky-2 below hero) -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Photos</h2>
+          <p class="muted">A quick look — clean, sharp, professional.</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="photo">
+            <img src="./ricky-2.jpg" alt="Ricky Studio Barber photos" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
-      <div class="wrap footer__inner">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img src="./logo.png" alt="Ricky Studio Barber logo" class="footer__logo">
+          <div>
+            <div class="footer__name">Ricky Studio Barber</div>
+            <div class="footer__muted">By appointment only</div>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <a target="_blank" rel="noopener" href="https://www.instagram.com/rickybarbers/">Instagram</a>
+          <a target="_blank" rel="noopener" href="https://facebook.com/REPLACE_FACEBOOK_PAGE">Facebook</a>
+          <a target="_blank" rel="noopener"
+             href="https://wa.me/REPLACE_WITH_NUMBER?text=Hi%20Ricky%2C%20I%27d%20like%20to%20book%20an%20appointment.">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
         <span>© <span id="year"></span> Ricky Studio Barber</span>
-        <a class="toTop" href="#">Back to top</a>
       </div>
     </footer>
   </main>
 
   <script src="./script.js"></script>
-
-  <!-- Hero image (IMPORTANT: relative path for GitHub Pages project sites) -->
-  <style>
-    .hero__bg{ background-image: url("./hero.jpg"); }
-  </style>
 </body>
 </html>
