@@ -1,15 +1,11 @@
 {
   "name": "Ricky Studio Barber",
   "short_name": "Ricky Studio",
-  "start_url": ".",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
-    {
-      "src": "./assets/logo-source.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+    { "src": "./logo-source.jpg", "sizes": "512x512", "type": "image/jpeg" }
   ]
 }
