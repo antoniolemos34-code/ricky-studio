@@ -1,37 +1,204 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8" />
-  <title>Ricky Studio Barber</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ricky Studio Barber – Men’s Hairdresser. By appointment only." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 
-  <link rel="icon" href="./logo-source.jpg" />
-  <link rel="stylesheet" href="./styles.css" />
+  <title>Ricky Studio Barber — Premium Men’s Cuts (By Appointment Only)</title>
+  <meta name="description" content="Ricky Studio Barber — premium men’s haircuts, clean fades & sharp line-ups. By appointment only. Book via Instagram." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ricky Studio Barber" />
+  <meta property="og:description" content="Premium men’s cuts. Clean fades. Sharp line-ups. By appointment only." />
+  <meta property="og:image" content="./assets/hero.jpg" />
+  <meta property="og:type" content="website" />
+
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="./assets/logo.png" />
+  <link rel="apple-touch-icon" href="./assets/logo.png" />
   <link rel="manifest" href="./manifest.webmanifest" />
+
+  <!-- Premium font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Ricky Studio Barber">
+        <img class="brand-logo" src="./assets/logo.png" alt="Ricky Studio Barber logo" />
+        <div class="brand-text">
+          <span class="brand-name">Ricky Studio</span>
+          <span class="brand-sub">Barber</span>
+        </div>
+      </a>
 
-<header class="header">
-  <div class="logo">
-    <img src="./logo-source.jpg" alt="Ricky Studio Barber logo">
-  </div>
-</header>
+      <nav class="menu">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a class="btn" href="#book">Book</a>
+      </nav>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Ricky Studio Barber</h1>
-    <p>Men’s Hairdresser · By appointment only</p>
-    <a class="cta" href="https://www.instagram.com/rickybarbers" target="_blank">
-      Book via Instagram
-    </a>
-  </div>
-</section>
+      <button class="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
 
-<footer class="footer">
-  <p>© Ricky Studio Barber</p>
-</footer>
+    <div class="mobile-menu" hidden>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a class="btn" href="#book">Book</a>
+    </div>
+  </header>
 
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="pill">By appointment only</div>
+
+        <h1>
+          Premium men’s cuts.<br />
+          <span class="gold">Clean. Sharp. Confident.</span>
+        </h1>
+
+        <p>
+          Skin fades, line-ups and detail work — built on real connections and energy.
+        </p>
+
+        <div class="hero-actions">
+          <a class="cta" href="https://www.instagram.com/rickybarbers" target="_blank" rel="noopener">
+            Book on Instagram
+          </a>
+          <a class="cta ghost" href="#services">View services</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-title">Fast booking</div>
+            <div class="stat-sub">DM on Instagram</div>
+          </div>
+          <div class="stat">
+            <div class="stat-title">Premium finish</div>
+            <div class="stat-sub">Precision + detail</div>
+          </div>
+          <div class="stat">
+            <div class="stat-title">Client focused</div>
+            <div class="stat-sub">Confidence & energy</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section reveal">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p>Simple options — premium results.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Haircut</h3>
+          <p>Classic or modern cut finished with clean detail.</p>
+        </article>
+
+        <article class="card">
+          <h3>Skin Fade</h3>
+          <p>Sharp fade with a crisp line-up and clean finish.</p>
+        </article>
+
+        <article class="card">
+          <h3>Haircut + Beard</h3>
+          <p>Full refresh with beard trim and shape.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-dark reveal">
+      <div class="split">
+        <div class="copy">
+          <h2>About Ricky</h2>
+          <p>
+            What started as a skill quickly became a passion — not just for creating clean cuts,
+            but for building real connections.
+          </p>
+          <p>
+            My mission goes beyond haircuts. I want every person who walks in to leave feeling renewed,
+            heard, and confident. This isn’t just about a fade or a line-up — it’s about energy.
+          </p>
+
+          <div class="tags">
+            <span>Precision</span>
+            <span>Clean fades</span>
+            <span>Sharp line-ups</span>
+            <span>Client-first</span>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <img src="./assets/ricky-1.jpg" alt="Ricky portrait" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section reveal">
+      <div class="section-head">
+        <h2>Gallery</h2>
+        <p>A quick look at the style.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="shot">
+          <img src="./assets/ricky-1.jpg" alt="Ricky Studio Barber" loading="lazy">
+        </figure>
+        <figure class="shot">
+          <img src="./assets/ricky-2.jpg" alt="Ricky with scissors" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- BOOK -->
+    <section id="book" class="section section-dark reveal">
+      <div class="book">
+        <h2>Book your appointment</h2>
+        <p>Fastest way: message Ricky on Instagram.</p>
+
+        <div class="book-actions">
+          <a class="cta" href="https://www.instagram.com/rickybarbers" target="_blank" rel="noopener">
+            Message on Instagram
+          </a>
+          <!-- Se ele tiver WhatsApp, ativa isto -->
+          <!-- <a class="cta ghost" href="https://wa.me/44XXXXXXXXXX" target="_blank" rel="noopener">Book on WhatsApp</a> -->
+        </div>
+
+        <div class="hint">
+          Tip: send <b>day/time</b> + <b>service</b> (Haircut / Fade / Haircut+Beard).
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Ricky Studio Barber</div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#book">Book</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
 </body>
 </html>
